@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#050505"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Reports | Student Marks Calculator</title></head><body data-page="reports.html">
+<main class="wrap">
+<div class="page-head"><h1>Reports</h1><p class="sub">Class-wide results calculated with SQL queries.</p></div>
+<div class="stats" id="stats"></div>
+<div class="grid"><div class="card rep"><h2>Grade distribution</h2><div id="grades"></div></div><div class="card rep"><h2>Pass and fail</h2><div id="pf"></div></div></div>
+<div class="grid"><div class="card rep"><h2>Subject averages</h2><div id="subjects"></div></div><div class="card rep"><h2>Top performers</h2><ol class="rank" id="top"></ol></div></div>
+<div class="card rep"><h2>Subject details</h2><div class="scroll"><table><thead><tr><th>Subject</th><th>Average</th><th>Highest</th><th>Students below 40</th></tr></thead><tbody id="subTable"></tbody></table></div></div>
+</main><footer>Student Marks Calculator. Data is stored in a SQLite database inside this browser and is never sent anywhere.</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script><script src="app.js"></script></body></html>

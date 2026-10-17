@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#050505"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Calculator | Student Marks Calculator</title></head><body data-page="calculator.html">
+<main class="wrap">
+<div class="page-head"><h1 id="title">Calculator</h1><p class="sub">Marks are out of 100. A student passes when every subject is 40 or above.</p></div>
+<div class="card">
+<div class="grid"><div><label for="name">Student name</label><input id="name" maxlength="60" autocomplete="off"></div><div><label for="reg">Register number</label><input id="reg" maxlength="30" autocomplete="off"></div></div>
+<h3 style="margin-top:20px">Subject marks</h3><div class="grid" id="marks"></div>
+<div class="row"><button class="primary" id="calc">Calculate result</button><button id="save">Save result</button><button id="cancel" hidden>Cancel edit</button></div>
+<div class="msg" id="msg" role="alert"></div><div class="result" id="result" aria-live="polite"></div>
+</div>
+<div class="card"><h3>Grade scale</h3><p class="sub">O: 90% and above. A+: 80%. A: 70%. B+: 60%. B: 50%. C: below 50% but all subjects passed. F: any subject below 40.</p></div>
+</main><footer>Student Marks Calculator. Data is stored in a SQLite database inside this browser and is never sent anywhere.</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script><script src="app.js"></script></body></html>

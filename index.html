@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#050505"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Dashboard | Student Marks Calculator</title></head><body data-page="index.html">
+<main class="wrap">
+<div class="hero"><h1>Student Marks Calculator</h1><p>Calculate totals, grades and results for five subjects, keep every record in a SQLite database, and see how the whole class is doing.</p></div>
+<div class="stats" id="stats"></div>
+<div class="grid modules">
+<a class="mod" href="calculator.html"><h3>Calculator</h3><p>Enter marks and get the total, percentage, grade and result.</p></a>
+<a class="mod" href="students.html"><h3>Students</h3><p>Search, sort, edit, delete and export saved records.</p></a>
+<a class="mod" href="reports.html"><h3>Reports</h3><p>Grade spread, subject averages and top performers.</p></a>
+</div>
+<div class="card" style="margin-top:20px"><h2>Recently added</h2><div class="scroll"><table><thead><tr><th>Student name</th><th>Register number</th><th>Percentage</th><th>Grade</th><th>Result</th></tr></thead><tbody id="recent"></tbody></table></div></div>
+</main><footer>Student Marks Calculator. Data is stored in a SQLite database inside this browser and is never sent anywhere.</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script><script src="app.js"></script></body></html>

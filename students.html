@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#050505"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Students | Student Marks Calculator</title></head><body data-page="students.html">
+<main class="wrap">
+<div class="page-head"><h1>Students</h1><p class="sub">Every saved record from the SQLite database. <span id="count"></span></p></div>
+<div class="card">
+<div class="tools"><input id="search" type="search" placeholder="Search by name or register number" aria-label="Search students"><select id="sort" aria-label="Sort students"><option value="id DESC">Newest first</option><option value="percentage DESC">Highest percentage</option><option value="percentage ASC">Lowest percentage</option><option value="name COLLATE NOCASE ASC">Name A to Z</option></select><a class="btn primary" href="calculator.html">Add student</a></div>
+<div class="scroll"><table><thead><tr><th>Student name</th><th>Register number</th><th>Total</th><th>Percentage</th><th>Grade</th><th>Result</th><th>Actions</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="row"><button id="expCsv">Export CSV</button><button class="danger" id="clear">Clear all records</button></div>
+</div>
+</main><footer>Student Marks Calculator. Data is stored in a SQLite database inside this browser and is never sent anywhere.</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script><script src="app.js"></script></body></html>
